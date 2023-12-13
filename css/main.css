@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+:root {
+    --primary-color: #21262a;
+    --secondary-color: #8cbd30;
+}
+
+.secondary-color {
+    color: #8cbd30;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+h1,
+h2 {
+    font-weight: 300;
+    line-height: 1.2;
+    margin: 10px 0;
+}
+
+p {
+    margin: 10px 0;
+}
+
+img {
+    width: 100%;
+}
+
+header {
+    background-color: var(--primary-color);
+    color: #fff;
+    height: 70px;
+}
+
+header ul {
+    display: flex;
+}
+
+.nav-link {
+    color: #fff;
+    padding: 10px;
+    margin: 0 5px;
+}
+
+.navbar-brand {
+    font-size: 32px;
+    color: #fff;
+}
+
+.navbar-brand span {
+    color: var(--secondary-color);
+}
+
+.nav-link:hover {
+    border-bottom: 2px var(--secondary-color) solid;
+}
+
+header .flex {
+    justify-content: space-between;
+}
+
+
+
+
+
+.showcase {
+    height: 400px;
+    background-color: var(--primary-color);
+    color: #fff;
+    position: relative;
+}
+
+.showcase h1 {
+    font-size: 40px;
+}
+
+.showcase p {
+    margin: 20px 0;
+}
+
+.showcase .grid {
+    overflow: visible;
+    grid-template-columns: 55% 45%;
+    gap: 30px;
+}
+
+.showcase-form {
+    position: relative;
+    top: 60px;
+    height: 350px;
+    width: 400px;
+    padding: 40px;
+    z-index: 100;
+    transform: rotate(2deg);
+}
+
+.showcase-form .form-control {
+    margin: 30px 0;
+}
+
+.showcase-form input[type=text],
+.showcase-form input[type=email] {
+    border: 0;
+    border-bottom: 2px solid #b4becb;
+    width: 100%;
+    padding: 4px 10px;
+    font-size: 16px;
+}
+
+.showcase-form input:focus {
+    outline: none;
+    border-bottom: 2px solid var(--secondary-color)
+}
+
+.showcase::before,
+.showcase::after {
+    content: '';
+    position: absolute;
+    height: 100px;
+    bottom: -70px;
+    right: 0;
+    left: 0;
+    transform: skewY(2deg);
+    background: #fff;
+}
+
+.stats {
+    padding-top: 100px;
+
+}
